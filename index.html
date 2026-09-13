@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THARUNPRANAV RC | AI Solution Builder & B.Tech AI & Data Science</title>
+  <meta name="description" content="Portfolio of THARUNPRANAV RC - AI Solution Builder and B.Tech graduate in AI & Data Science. Specializing in Generative AI, Conversational AI, RAG pipelines, and AI automation.">
+  <meta name="keywords" content="THARUNPRANAV RC, AI Solution Builder, Generative AI, RAG, Conversational AI, Machine Learning, Deep Learning, Muthoot Fincorp, Panimalar Institute of Technology">
+  <meta name="author" content="THARUNPRANAV RC">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="THARUNPRANAV RC | AI Solution Builder">
+  <meta property="og:description" content="AI Solution Builder and B.Tech graduate in AI & Data Science. Developing AI Voice Bots, WhatsApp Bots, RAG pipelines, and AI automation.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070709'/><path d='M25 30 H75 M50 30 V80 M35 55 H65' stroke='%23e11d48' stroke-width='9' stroke-linecap='round'/></svg>">
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <!-- Interactive Neural Synapse Canvas Background -->
+  <canvas id="neural-canvas" class="fixed inset-0 pointer-events-none z-0" aria-hidden="true"></canvas>
+
+  <!-- Ambient Light Gradients -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container header-inner">
+      <!-- Requirement 1: Home button instead of Tharunpranav RC AI Solution Builder -->
+      <a href="#hero" class="brand-logo btn-home" aria-label="Home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="home-icon" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </div>
+        <span class="brand-name">Home</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities (Requirement 12: Recruiter view & Audio feedback removed) -->
+      <div class="header-actions">
+        <!-- Resume Download Button -->
+        <a href="Tharun_RC_Resume.pdf" download="Tharun_RC_Resume.pdf" class="btn btn-primary btn-sm" id="nav-resume-btn" aria-label="Download Tharunpranav RC Resume PDF">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume PDF</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="Tharun_RC_Resume.pdf" download="Tharun_RC_Resume.pdf" class="btn btn-primary btn-block">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION (Requirements 2, 3, 4: Visual card removed, status pill removed, bottom metrics removed, centralized layout) -->
+    <section id="hero" class="hero-section" aria-label="Hero Introduction">
+      <div class="container hero-container hero-container-centered">
+        <div class="hero-content hero-content-centered">
+          <!-- Exact Name -->
+          <h1 class="hero-headline">
+            <span class="hero-name-prefix">Hello, I'm</span>
+            <span class="hero-full-name">THARUNPRANAV RC</span>
+          </h1>
+
+          <!-- Dynamic Role Tagline -->
+          <p class="hero-subtitle">
+            Specialized in designing end-to-end <span class="text-highlight">Generative AI</span>, <span class="text-highlight">Conversational AI</span>, and <span class="text-highlight">workflow automation</span> systems.
+          </p>
+
+          <!-- Contact Quick Info Bar -->
+          <div class="hero-contact-chips">
+            <a href="tel:+919342078691" class="contact-chip" title="Call Tharunpranav RC">
+              <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91 9342078691</span>
+            </a>
+
+            <a href="mailto:pranavtharun5@gmail.com" class="contact-chip" title="Email Tharunpranav RC">
+              <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>pranavtharun5@gmail.com</span>
+            </a>
+
+            <span class="contact-chip chip-static">
+              <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Sivaganga, Tamil Nadu</span>
+            </span>
+
+            <a href="https://github.com/shivatharun5679" target="_blank" rel="noopener noreferrer" class="contact-chip chip-link" title="Open GitHub Profile">
+              <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/tharunpranav-rc-86327a259" target="_blank" rel="noopener noreferrer" class="contact-chip chip-link" title="Open LinkedIn Profile">
+              <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Hero Action Buttons (Evenly spaced) -->
+          <div class="hero-actions hero-actions-centered">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>Explore Key Projects</span>
+              <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#experience" class="btn btn-glass btn-lg">
+              <span>View Experience</span>
+            </a>
+
+            <a href="Tharun_RC_Resume.pdf" download="Tharun_RC_Resume.pdf" class="btn btn-outline-red btn-lg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL SUMMARY / ABOUT SECTION (Requirements 5 & 17: Subtitle removed, 4 cards removed) -->
+    <section id="about" class="section section-about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>ABOUT &amp; PROFILE</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="about-heading" class="section-title">PROFESSIONAL SUMMARY</h2>
+        </div>
+
+        <div class="summary-wrapper glass-panel">
+          <div class="summary-quote-mark" aria-hidden="true">“</div>
+          <blockquote class="summary-text">
+            Results-driven AI Solution Builder and B.Tech graduate in AI &amp; Data Science with hands-on experience designing end-to-end Generative AI, Conversational AI, and workflow automation systems. Proven track record of developing AI Voice Bots, WhatsApp Bots, RAG pipelines, and AI agents integrating LLMs, STT/TTS, n8n, and Twilio for enterprise operational efficiency. Skilled across the full AI development lifecycle—from Deep Learning and NLP to backend API integration, intelligent document processing, and AI automation.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION (Requirement 6: Subtitle removed) -->
+    <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>CORE COMPETENCIES</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="skills-heading" class="section-title">SKILLS</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="skill-category">Core Expertise</span>
+            </div>
+            <h3 class="skill-title">AI Automation</h3>
+            <p class="skill-details">Enterprise workflow orchestration, event-driven pipelines, Webhooks, Google Sheets automation, and autonomous task routing with n8n.</p>
+            <div class="skill-provenance">Applied in: Muthoot Fincorp Intern &amp; Enterprise Projects</div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <span class="skill-category">Generative AI</span>
+            </div>
+            <h3 class="skill-title">Generative AI &amp; Large Language Models (LLMs)</h3>
+            <p class="skill-details">Prompt engineering, guardrails, multi-turn context retention, temperature optimization, source grounding, and enterprise LLM integrations.</p>
+            <div class="skill-provenance">Applied in: Enterprise RAG System &amp; Voice AI Agent</div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <span class="skill-category">Information Retrieval</span>
+            </div>
+            <h3 class="skill-title">Retrieval-Augmented Generation (RAG)</h3>
+            <p class="skill-details">Semantic vector search, vector embeddings, chunking strategies, document intelligence pipelines, citations, and hallucination reduction.</p>
+            <div class="skill-provenance">Applied in: Multimodal Document Intelligence &amp; Enterprise RAG</div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <span class="skill-category">Agent Interaction</span>
+            </div>
+            <h3 class="skill-title">Conversational AI</h3>
+            <p class="skill-details">Multilingual STT/TTS voice agents, WhatsApp interactive components, intent classification, multi-turn state management, and real-time response capture.</p>
+            <div class="skill-provenance">Applied in: Muthoot Fincorp Voice AI &amp; WhatsApp Bot</div>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+              </div>
+              <span class="skill-category">Deep Learning</span>
+            </div>
+            <h3 class="skill-title">Deep Learning &amp; Convolutional Neural Networks (CNNs)</h3>
+            <p class="skill-details">Model architecture design, dataset preparation, image classification, audio spectrogram analysis, training, validation, and evaluation.</p>
+            <div class="skill-provenance">Applied in: Pneumonia Diagnosis &amp; Song Genre Analysis</div>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="skill-category">Data Science</span>
+            </div>
+            <h3 class="skill-title">Machine Learning</h3>
+            <p class="skill-details">Core ML algorithms, data preprocessing, feature engineering, supervised &amp; unsupervised learning techniques, model training, and performance metrics.</p>
+            <div class="skill-provenance">Applied in: AISECT Institute / TN Skill Corporation</div>
+          </div>
+
+          <!-- Skill 7 -->
+          <div class="skill-card glass-panel skill-card-wide">
+            <div class="skill-top">
+              <div class="skill-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="skill-category">Full Stack Engineering</span>
+            </div>
+            <h3 class="skill-title">Django Full-Stack Web Development</h3>
+            <p class="skill-details">Backend development using Python (Django), MySQL database design, RESTful API architecture, HTML5, CSS3, JavaScript, Bootstrap, and production deployment.</p>
+            <div class="skill-provenance">Applied in: FIIT Institute Trainee &amp; Deployed E-commerce Site</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (Requirement 7: Subtitle removed, 3 badges removed) -->
+    <section id="experience" class="section section-experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>PROFESSIONAL TRACK RECORD</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="experience-heading" class="section-title">EXPERIENCE</h2>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience 1: Muthoot Fincorp Limited -->
+          <article class="timeline-card glass-panel" aria-labelledby="exp-muthoot">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3 id="exp-muthoot" class="company-name">Muthoot Fincorp Limited</h3>
+                  <div class="role-title">AI Solution Builder Intern</div>
+                </div>
+              </div>
+
+              <ul class="bullet-list">
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Independently developed a Multilingual Voice AI Agent for Banking &amp; Loan Notifications to automate daily pre-debit notifications and customer follow-ups using natural, human-like voice conversations and multilingual language switching. The system captures customer responses and specific reasons for payment refusal, classifies call outcomes, and automatically stores the conversation data in Google Sheets.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Independently developed a WhatsApp Loan Verification &amp; CRM Automation System to automate customer verification through structured conversational flows. Implemented interactive buttons, list menus, and free-text inputs to make responses easy for customers, while automatically capturing, validating, and updating customer information and verification status in Google Sheets.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Designed and implemented end-to-end automation workflows connecting AI agents, WhatsApp/Voice communication, Webhooks, and Google Sheets, enabling automated customer engagement, response capture, data synchronization, and follow-up processes with minimal manual intervention.
+                  </p>
+                </li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag-pill">Voice AI Agent</span>
+                <span class="tag-pill">WhatsApp Automation</span>
+                <span class="tag-pill">Multilingual STT/TTS</span>
+                <span class="tag-pill">Webhooks</span>
+                <span class="tag-pill">Google Sheets API</span>
+                <span class="tag-pill">n8n</span>
+                <span class="tag-pill">CRM Integration</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2: AISECT Institute -->
+          <article class="timeline-card glass-panel" aria-labelledby="exp-aisect">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3 id="exp-aisect" class="company-name">AISECT Institute (TN Skill Corporation)</h3>
+                  <div class="role-title">AI &amp; Machine Learning Trainee</div>
+                </div>
+              </div>
+
+              <ul class="bullet-list">
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Completed a comprehensive AI and Machine Learning course covering core ML algorithms, data preprocessing, model training, and evaluation.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Gained hands-on experience in Python-based ML development, working with supervised and unsupervised learning techniques.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built and trained Deep Learning models using CNNs and gained exposure to multiple other Deep Learning architectures.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Completed a fully working Song Genre Analysis project using CNN, including dataset preparation, model building, and performance evaluation.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Developed a Pneumonia Diagnosis System using Convolutional Neural Networks and Deep Learning as part of the final-year academic project, covering model development, training, and evaluation.
+                  </p>
+                </li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag-pill">Python ML</span>
+                <span class="tag-pill">CNNs</span>
+                <span class="tag-pill">Deep Learning</span>
+                <span class="tag-pill">Supervised/Unsupervised</span>
+                <span class="tag-pill">Model Training &amp; Evaluation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 3: FIIT Institute -->
+          <article class="timeline-card glass-panel" aria-labelledby="exp-fiit">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3 id="exp-fiit" class="company-name">FIIT Institute</h3>
+                  <div class="role-title">Web Development Trainee</div>
+                </div>
+              </div>
+
+              <ul class="bullet-list">
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Completed Full Stack Web Development course covering both frontend and backend development.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built responsive web apps using HTML, CSS, JavaScript, and Bootstrap.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Developed backend using Python (Django), MySQL, and RESTful APIs.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Deployed a fully working e-commerce site as part of Final project.
+                  </p>
+                </li>
+              </ul>
+
+              <div class="exp-tags">
+                <span class="tag-pill">Python (Django)</span>
+                <span class="tag-pill">MySQL</span>
+                <span class="tag-pill">RESTful APIs</span>
+                <span class="tag-pill">HTML / CSS / JS</span>
+                <span class="tag-pill">Bootstrap</span>
+                <span class="tag-pill">E-Commerce Deployment</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY PROJECTS SECTION (Requirement 8: Subtitle removed, 3 status badges removed) -->
+    <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>ENGINEERED SOLUTIONS</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="projects-heading" class="section-title">KEY PROJECTS</h2>
+        </div>
+
+        <div class="projects-container">
+          <!-- Project 1: Multimodal Document Intelligence & Enterprise RAG System -->
+          <article class="project-card glass-panel" aria-labelledby="proj-rag">
+            <div class="project-header">
+              <div class="project-title-area">
+                <span class="project-kicker">Enterprise RAG &amp; Vision</span>
+                <h3 id="proj-rag" class="project-title">Multimodal Document Intelligence &amp; Enterprise RAG System</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <ul class="bullet-list project-bullets">
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built a Multimodal Document Intelligence and OCR pipeline using RAG for PDFs, Word documents, images, smartphone camera images, scanned files, and various document formats.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Developed an Enterprise RAG system with Embeddings and Vector Search for fast, context-grounded document retrieval.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Implemented AI Guardrails and Source Citations to minimize hallucinations and ensure policy answers remain grounded in verified documents.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built a Web-Based Interactive RAG Chatbot that retrieves answers from enterprise documents in real time, with one-click PDF download of the complete Q&amp;A conversation directly from the same interface.
+                  </p>
+                </li>
+              </ul>
+
+              <!-- Interactive Architecture Visualizer for Project 1 -->
+              <div class="arch-visualizer">
+                <div class="arch-visualizer-header">
+                  <span class="arch-tag">SYSTEM ARCHITECTURE PIPELINE</span>
+                  <span class="arch-sub">Click nodes to inspect data flow</span>
+                </div>
+                <div class="pipeline-diagram">
+                  <button class="pipe-node" data-node="input" type="button">
+                    <span class="node-icon">📄</span>
+                    <span class="node-name">Multi-Format Ingestion</span>
+                    <span class="node-desc">PDF, DOCX, Camera Scans</span>
+                  </button>
+                  <div class="pipe-connector" aria-hidden="true">→</div>
+                  <button class="pipe-node" data-node="ocr" type="button">
+                    <span class="node-icon">👁️</span>
+                    <span class="node-name">Vision &amp; OCR</span>
+                    <span class="node-desc">Multimodal Extraction</span>
+                  </button>
+                  <div class="pipe-connector" aria-hidden="true">→</div>
+                  <button class="pipe-node" data-node="vector" type="button">
+                    <span class="node-icon">⚡</span>
+                    <span class="node-name">Vector Search</span>
+                    <span class="node-desc">Semantic Embeddings</span>
+                  </button>
+                  <div class="pipe-connector" aria-hidden="true">→</div>
+                  <button class="pipe-node" data-node="guardrails" type="button">
+                    <span class="node-icon">🛡️</span>
+                    <span class="node-name">AI Guardrails</span>
+                    <span class="node-desc">Source Citations</span>
+                  </button>
+                  <div class="pipe-connector" aria-hidden="true">→</div>
+                  <button class="pipe-node" data-node="chatbot" type="button">
+                    <span class="node-icon">💬</span>
+                    <span class="node-name">Web Chatbot</span>
+                    <span class="node-desc">1-Click PDF Export</span>
+                  </button>
+                </div>
+                <div id="pipe-detail-box-1" class="pipe-detail-box" aria-live="polite">
+                  <span class="detail-label">ACTIVE INSPECTOR:</span>
+                  <span class="detail-text">Click any node above to inspect pipeline technical mechanisms.</span>
+                </div>
+              </div>
+
+              <!-- Core Technologies Box verbatim -->
+              <div class="core-tech-box">
+                <div class="core-tech-label">Core Technologies:</div>
+                <div class="core-tech-string">
+                  Retrieval-Augmented Generation (RAG), Multimodal Vision &amp; OCR, Semantic Vector Search &amp; Embeddings,n8n, Unstructured Data Pipelines, Automated PDF Report Generation
+                </div>
+                <div class="core-tech-chips">
+                  <span class="tech-chip">Retrieval-Augmented Generation (RAG)</span>
+                  <span class="tech-chip">Multimodal Vision &amp; OCR</span>
+                  <span class="tech-chip">Semantic Vector Search &amp; Embeddings</span>
+                  <span class="tech-chip">n8n</span>
+                  <span class="tech-chip">Unstructured Data Pipelines</span>
+                  <span class="tech-chip">Automated PDF Report Generation</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Multilingual Voice AI Agent for Banking & Loan Pre-Notification -->
+          <article class="project-card glass-panel" aria-labelledby="proj-voice">
+            <div class="project-header">
+              <div class="project-title-area">
+                <span class="project-kicker">Conversational Telephony &amp; Voice</span>
+                <h3 id="proj-voice" class="project-title">Multilingual Voice AI Agent for Banking &amp; Loan Pre-Notification</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <ul class="bullet-list project-bullets">
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built an automated outbound Voice AI Agent for daily loan pre-debit notifications, including scheduled batch calling and personalized customer conversations using natural, human-like voice interactions.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Developed a real-time multilingual conversational system supporting natural language switching across English, Tanglish, Hinglish, and regional dialects.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Integrated customer and field-agent interaction history into live calls for personalized conversations and implemented Intent Classification for payment confirmation, refusal, callback requests, advance payment requests, and no-answer outcomes.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built an automated post-call workflow using Webhooks and AI to accurately capture and store customer responses and refusal reasons as stated during the conversation, along with call outcomes and transcripts, in Google Sheets while tracking attempts and scheduling follow-ups automatically.
+                  </p>
+                </li>
+              </ul>
+
+              <!-- Interactive Voice Flow Simulator -->
+              <div class="voice-sim-box">
+                <div class="sim-header">
+                  <span class="arch-tag">VOICE AGENT CALL FLOW &amp; INTENT CLASSIFIER</span>
+                  <span class="arch-sub">Live Telephony Intelligence Simulation</span>
+                </div>
+                <div class="sim-grid">
+                  <div class="sim-pill">
+                    <span class="pill-title">Batch Trigger</span>
+                    <span class="pill-detail">Scheduled Daily Outbound</span>
+                  </div>
+                  <div class="sim-pill">
+                    <span class="pill-title">Language Switching</span>
+                    <span class="pill-detail">English • Tanglish • Hinglish</span>
+                  </div>
+                  <div class="sim-pill">
+                    <span class="pill-title">Intent Detection</span>
+                    <span class="pill-detail">Payment Confirm / Refusal / Callback</span>
+                  </div>
+                  <div class="sim-pill">
+                    <span class="pill-title">Webhook Automation</span>
+                    <span class="pill-detail">Google Sheets &amp; Follow-up Sync</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Core Technologies Box verbatim -->
+              <div class="core-tech-box">
+                <div class="core-tech-label">Core Technologies:</div>
+                <div class="core-tech-string">
+                  Conversational AI, Voice AI Agents, Multilingual STT/TTS, n8n, Prompt Engineering &amp; Guardrails, Webhooks, Google Sheets Automation
+                </div>
+                <div class="core-tech-chips">
+                  <span class="tech-chip">Conversational AI</span>
+                  <span class="tech-chip">Voice AI Agents</span>
+                  <span class="tech-chip">Multilingual STT/TTS</span>
+                  <span class="tech-chip">n8n</span>
+                  <span class="tech-chip">Prompt Engineering &amp; Guardrails</span>
+                  <span class="tech-chip">Webhooks</span>
+                  <span class="tech-chip">Google Sheets Automation</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: WhatsApp Loan Verification & CRM Automation System -->
+          <article class="project-card glass-panel" aria-labelledby="proj-whatsapp">
+            <div class="project-header">
+              <div class="project-title-area">
+                <span class="project-kicker">WhatsApp Cloud API &amp; CRM</span>
+                <h3 id="proj-whatsapp" class="project-title">WhatsApp Loan Verification &amp; CRM Automation System</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <ul class="bullet-list project-bullets">
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built an automated WhatsApp Loan Verification Bot using n8n and WhatsApp Business Cloud API to guide customers through a structured verification process.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Designed user-friendly conversational flows with interactive buttons, list menus, and free-text inputs, making it easy for customers to confirm, select, or provide required information.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Implemented real-time customer response capture and automatic storage in Google Sheets, including updating existing details without overwriting previous information.
+                  </p>
+                </li>
+                <li>
+                  <span class="bullet-icon" aria-hidden="true">▸</span>
+                  <p class="bullet-text">
+                    Built event-driven Webhook workflows to process incoming messages, manage conversation state, handle corrections and exceptions, and automatically update verification status and customer data in Google Sheets.
+                  </p>
+                </li>
+              </ul>
+
+              <!-- WhatsApp Interactive Components Showcase -->
+              <div class="wa-showcase">
+                <div class="wa-showcase-header">
+                  <span class="arch-tag">CONVERSATIONAL COMPONENTS</span>
+                  <span class="arch-sub">Structured Loan Verification UI</span>
+                </div>
+                <div class="wa-flow-preview">
+                  <div class="wa-bubble wa-bot">
+                    <span class="wa-sender">WhatsApp Verification Bot</span>
+                    <p class="wa-text">Welcome. Please verify your registered loan pre-debit details for the current billing cycle.</p>
+                    <div class="wa-actions">
+                      <span class="wa-btn-chip">✓ Confirm Details</span>
+                      <span class="wa-btn-chip">📋 List Menu Options</span>
+                      <span class="wa-btn-chip">✎ Provide Free-Text Input</span>
+                    </div>
+                  </div>
+                  <div class="wa-bubble wa-sync">
+                    <span class="wa-sync-label">Real-time Webhook Execution:</span>
+                    <span class="wa-sync-desc">State updated in Google Sheets API without overwriting prior history</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Core Technologies Box verbatim -->
+              <div class="core-tech-box">
+                <div class="core-tech-label">Core Technologies:</div>
+                <div class="core-tech-string">
+                  n8n Workflow Automation, WhatsApp Business Cloud API, Webhooks, Conversational AI, Interactive WhatsApp Components, Google Sheets API, Multi-Turn Conversation Flows, JSON Data Processing
+                </div>
+                <div class="core-tech-chips">
+                  <span class="tech-chip">n8n Workflow Automation</span>
+                  <span class="tech-chip">WhatsApp Business Cloud API</span>
+                  <span class="tech-chip">Webhooks</span>
+                  <span class="tech-chip">Conversational AI</span>
+                  <span class="tech-chip">Interactive WhatsApp Components</span>
+                  <span class="tech-chip">Google Sheets API</span>
+                  <span class="tech-chip">Multi-Turn Conversation Flows</span>
+                  <span class="tech-chip">JSON Data Processing</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Additional Academic & Institute Projects from Experience Section -->
+          <div class="additional-projects-grid">
+            <!-- Academic Project 1 -->
+            <div class="sub-proj-card glass-panel">
+              <div class="sub-proj-badge">Final-Year Academic Project</div>
+              <h4 class="sub-proj-title">Pneumonia Diagnosis System</h4>
+              <p class="sub-proj-desc">
+                Developed a Pneumonia Diagnosis System using Convolutional Neural Networks and Deep Learning as part of the final-year academic project, covering model development, training, and evaluation.
+              </p>
+              <div class="sub-proj-tech">CNNs • Deep Learning • Medical Imaging</div>
+            </div>
+
+            <!-- Training Project 2 -->
+            <div class="sub-proj-card glass-panel">
+              <div class="sub-proj-badge">Deep Learning Project</div>
+              <h4 class="sub-proj-title">Song Genre Analysis</h4>
+              <p class="sub-proj-desc">
+                Completed a fully working Song Genre Analysis project using CNN, including dataset preparation, model building, and performance evaluation.
+              </p>
+              <div class="sub-proj-tech">CNNs • Audio Analysis • Dataset Preparation</div>
+            </div>
+
+            <!-- Training Project 3 -->
+            <div class="sub-proj-card glass-panel">
+              <div class="sub-proj-badge">Final Web Project</div>
+              <h4 class="sub-proj-title">E-Commerce Site</h4>
+              <p class="sub-proj-desc">
+                Deployed a fully working e-commerce site as part of Final project at FIIT Institute, with Python (Django) backend, MySQL database, and RESTful APIs.
+              </p>
+              <div class="sub-proj-tech">Django • MySQL • RESTful APIs • Full-Stack</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION (Requirement 9: Subtitle removed) -->
+    <section id="education" class="section section-education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>ACADEMIC FOUNDATION</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="education-heading" class="section-title">EDUCATION</h2>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <article class="edu-card glass-panel edu-card-featured" aria-labelledby="edu-pit">
+            <div class="edu-header">
+              <div class="edu-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <span class="edu-years">2021-2025</span>
+            </div>
+            <h3 id="edu-pit" class="edu-institution">Panimalar Institute of Technology, Chennai</h3>
+            <div class="edu-degree">B.Tech in Artificial Intelligence and Data Science</div>
+            <div class="edu-score-box">
+              <span class="score-label">CGPA:</span>
+              <span class="score-value">8.4</span>
+            </div>
+          </article>
+
+          <!-- Degree 2 -->
+          <article class="edu-card glass-panel" aria-labelledby="edu-hsc">
+            <div class="edu-header">
+              <div class="edu-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <span class="edu-years">2019-2021</span>
+            </div>
+            <h3 id="edu-hsc" class="edu-institution">Oxford Matric Hr. Sec. School, Sivaganga - HSC</h3>
+            <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
+            <div class="edu-score-box">
+              <span class="score-label">Score:</span>
+              <span class="score-value">82%</span>
+            </div>
+          </article>
+
+          <!-- Degree 3 -->
+          <article class="edu-card glass-panel" aria-labelledby="edu-sslc">
+            <div class="edu-header">
+              <div class="edu-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <span class="edu-years">2018-2019</span>
+            </div>
+            <h3 id="edu-sslc" class="edu-institution">Oxford Matric Hr. Sec. School, Sivaganga - SSLC</h3>
+            <div class="edu-degree">Secondary School Leaving Certificate (SSLC)</div>
+            <div class="edu-score-box">
+              <span class="score-label">Score:</span>
+              <span class="score-value">80%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION (Requirement 10: Subtitle removed) -->
+    <section id="certifications" class="section section-certifications" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>VERIFIED CREDENTIALS</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="certifications-heading" class="section-title">CERTIFICATIONS</h2>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-area">
+              <div class="cert-shield">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">AI &amp; Machine Learning Certification</h3>
+              <div class="cert-issuer">AISECT / TN Skill Corporation</div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-area">
+              <div class="cert-shield">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">Full Stack Web Development</h3>
+              <div class="cert-issuer">FIIT Institute</div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-area">
+              <div class="cert-shield">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">AWS Cloud Practitioner Essentials</h3>
+              <div class="cert-issuer">Amazon Web Services (AWS)</div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-area">
+              <div class="cert-shield">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">Oracle Cloud Infrastructure Foundations Associate</h3>
+              <div class="cert-issuer">Oracle</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Requirements 11 & 13: Subtitle removed, direct inquiry box removed, gap & alignment maintained) -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span>GET IN TOUCH</span>
+            <span class="kicker-line"></span>
+          </div>
+          <h2 id="contact-heading" class="section-title">CONNECT WITH THARUNPRANAV</h2>
+        </div>
+
+        <div class="contact-grid contact-grid-centered">
+          <!-- Contact Detail Cards -->
+          <div class="contact-cards-col contact-cards-centered">
+            <!-- Email Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:pranavtharun5@gmail.com" class="contact-value">pranavtharun5@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="pranavtharun5@gmail.com" title="Copy email address" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Phone Number</span>
+                <a href="tel:+919342078691" class="contact-value">+91 9342078691</a>
+              </div>
+              <button class="copy-btn" data-copy="+91 9342078691" title="Copy phone number" aria-label="Copy phone number">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Sivaganga, Tamil Nadu</span>
+              </div>
+            </div>
+
+            <!-- Online Profiles Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Profiles</span>
+                <div class="profile-links-row">
+                  <a href="https://github.com/shivatharun5679" target="_blank" rel="noopener noreferrer" class="profile-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/tharunpranav-rc-86327a259" target="_blank" rel="noopener noreferrer" class="profile-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Requirements 14, 15, 16: Removed AI Solution Builder tagline, Designed & Built by Tharunpranav RC, © 2026 Tharunpranav RC. All rights reserved.) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">THARUNPRANAV RC</span>
+        <span class="footer-location">Sivaganga, Tamil Nadu</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Back to Top</a>
+        <a href="#projects">Key Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="Tharun_RC_Resume.pdf" download="Tharun_RC_Resume.pdf">Resume Download</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/shivatharun5679" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tharunpranav-rc-86327a259" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Tharunpranav RC. All rights reserved.</p>
+        <p class="footer-truth-badge">Designed &amp; Built by Tharunpranav RC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript Bundle -->
+  <script src="app.js"></script>
+</body>
+</html>
